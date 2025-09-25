@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Fundo com a imagem + overlay para opacidade */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #f5f5f5; 
+    line-height: 1.6;
+
+    background: url('fundo-estrelado.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Camada de opacidade sobre o fundo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 15, 50, 0.75); /* tom roxo-escuro translúcido */
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(137, 74, 226, 0.85);
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.1); /* semi-transparente */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px); /* efeito glassmorphism */
+}
+
+section {
+    margin-bottom: 30px;
+    border-left: 5px solid #cfa5ff;
+    padding-left: 20px;
+}
+
+section h2 {
+    color: #f0c6ff;
+    margin-top: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+div h3 {
+    color: #d6a9ff;
+    font-weight: 600;
+}
+
+img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #cfa5ff;
+    display: block;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #ffccff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #ddd;
+}
